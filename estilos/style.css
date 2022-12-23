@@ -6,7 +6,8 @@
 }
 
 header {
-    background-color: lightgray;
+    background-image: linear-gradient(to bottom, #2e5287, #456ba5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
 }
 
 .div-header {
@@ -24,6 +25,7 @@ header {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.200);
     margin: 5px 0px 5px 0px;
+    color: #2e5287;
 } 
 
 .titulo-pagina > h1 {
@@ -31,7 +33,7 @@ header {
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .menu > ul {
@@ -45,9 +47,14 @@ header {
 
 .menu > ul > li > button {
     padding: 8px !important;
-    color: black;
-    font-weight: bold;
-    background-color: rgb(255, 0, 0) !important;
+    color: white;
+    background-color: #3466b1 !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: white !important;
+    color: #2e5287 !important;
+    font-weight: bold !important;
 }
 
 footer {
@@ -55,15 +62,15 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 8px;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    background-color: lightgray;
+    padding: 6px;
+    box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.400);
+    background-color: #2e5287;
 }
 
 footer > button {
     background-color: red;
     color: white;
+    font-size: 1em;
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
