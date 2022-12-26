@@ -380,14 +380,19 @@
             </div>
         </div>
     </main>
-    <script src="bootstrap/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js">
-        var mostrarTudo = document.querySelector('#pills-roupas')
-        console.log ('aaa')
+    <script src="bootstrap/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const mostrarTudo = document.getElementById('pills-roupas')
         function mostrarTodos() {
-            mostrarTudo.classList.add("active")
-            console.log (mostrarTudo)
-            console.log('msoktgklpdsg')
+            document.getElementById('pills-todos-tab').click()
+            mostrarTudo.classList.add('show')
+            mostrarTudo.classList.add('active')
+            document.getElementById('pills-todos-tab').click()
+        
+            console.log ('fonfofofn')
         }
+
+        
     </script>
 </body>
 </html>
