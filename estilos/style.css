@@ -1,9 +1,25 @@
 @charset "UTF-8";
+
+@media (min-width: 768px) {
+    .carousel {
+        width: 600px !important;
+        margin: auto;
+    }
+}
+
+@media (max-width: 767px){
+    .carousel {
+        width: 90% !important;
+        margin: auto;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif !important;
 }
+
 
 header {
     background-image: linear-gradient(to bottom, #2e5287, #456ba5);
@@ -63,4 +79,8 @@ header {
     text-align: center;
     margin-top: 8px;
     font-weight: 600;
+}
+
+.carousel-item > img {
+    border-radius: 10px;
 }

@@ -5,9 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orçamentos</title>
-    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="bootstrap/bootstrap-5.2.2-dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="bootstrap/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <style>
+        @charset "UTF-8";
+
+        @media (min-width: 768px) {
+            .carousel {
+                width: 600px !important;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 767px){
+            .carousel {
+                width: 90% !important;
+                margin: auto;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+
+        header {
+            background-image: linear-gradient(to bottom, #2e5287, #456ba5);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+        }
+
+        .botao-mais {
+            width: 30px !important;
+            height: 30px !important;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            margin: auto;
+            background-color: rgb(0, 300, 0);
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.200);
+            margin: 5px 0px 5px 0px;
+            color: #2e5287;
+        } 
+
+        .titulo-pagina > h1 {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+        }
+
+        .menu > ul {
+            margin-top: 10px;
+        }
+
+        .menu > ul > li {
+            text-align: center !important;
+            margin: auto;
+        }
+
+        .menu > ul > li > button {
+            padding: 8px !important;
+            color: white;
+            background-color: #3466b1 !important;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            background-color: white !important;
+            color: #2e5287 !important;
+            font-weight: bold !important;
+        }
+
+        .carrosel {
+            margin: auto !important;
+            margin-top: 15px !important;
+            margin-bottom: 20px !important;
+        }
+
+        .preco-itens {
+            text-align: center;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        .carousel-item > img {
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,7 +102,8 @@
             <div class="col-12 titulo-pagina"><h1>ORÇAMENTO DE VENDA</h1></div>
         </div>
         <div class="row gx-0">
-            <div class="col-12 menu">
+            <div class="col-lg-3"></div>
+            <div class="col-12 col-lg-6 menu">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link active" id="pills-todos-tab" data-bs-toggle="pill" data-bs-target="#pills-todos" type="button" role="tab" aria-controls="pills-todos" aria-selected="true" data-id="1" onclick="mostrarTodos()">Todos</button>
@@ -34,11 +122,12 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-lg-3"></div>
         </div>
     </header>
     <main>
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-todos" role="tabpanel" aria-labelledby="pills-todos-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="pills-todos" role="tabpanel" aria-labelled2by="pills-todos-tab" tabindex="0">
             </div> 
             <div class="tab-pane fade show active" id="pills-roupas" role="tabpanel" aria-labelledby="pills-roupas-tab" tabindex="0">
                 <!--Carrosel 1-->
