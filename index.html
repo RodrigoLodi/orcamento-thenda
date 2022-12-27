@@ -18,19 +18,19 @@
             <div class="col-12 menu">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pills-todos-tab" data-bs-toggle="pill" data-bs-target="#pills-todos" type="button" role="tab" aria-controls="pills-todos" aria-selected="true" onclick="mostrarTodos()">Todos</button>
+                      <button class="nav-link active" id="pills-todos-tab" data-bs-toggle="pill" data-bs-target="#pills-todos" type="button" role="tab" aria-controls="pills-todos" aria-selected="true" data-id="1" onclick="mostrarTodos()">Todos</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-roupas-tab" data-bs-toggle="pill" data-bs-target="#pills-roupas" type="button" role="tab" aria-controls="pills-roupas" aria-selected="false">Roupas</button>
+                      <button class="nav-link" id="pills-roupas-tab" data-bs-toggle="pill" data-bs-target="#pills-roupas" type="button" role="tab" aria-controls="pills-roupas" aria-selected="false" data-id="0" onclick="mostrarOutros()">Roupas</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-cestas-tab" data-bs-toggle="pill" data-bs-target="#pills-cestas" type="button" role="tab" aria-controls="pills-cestas" aria-selected="false">Cestas</button>
+                      <button class="nav-link" id="pills-cestas-tab" data-bs-toggle="pill" data-bs-target="#pills-cestas" type="button" role="tab" aria-controls="pills-cestas" aria-selected="false" data-id="0" onclick="mostrarOutros()">Cestas</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-malas-tab" data-bs-toggle="pill" data-bs-target="#pills-malas" type="button" role="tab" aria-controls="pills-malas" aria-selected="false">Malas</button>
+                        <button class="nav-link" id="pills-malas-tab" data-bs-toggle="pill" data-bs-target="#pills-malas" type="button" role="tab" aria-controls="pills-malas" aria-selected="false" data-id="0" onclick="mostrarOutros()">Malas</button>
                       </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-joias-tab" data-bs-toggle="pill" data-bs-target="#pills-joias" type="button" role="tab" aria-controls="pills-joias" aria-selected="false">Joias</button>
+                        <button class="nav-link" id="pills-joias-tab" data-bs-toggle="pill" data-bs-target="#pills-joias" type="button" role="tab" aria-controls="pills-joias" aria-selected="false" data-id="0" onclick="mostrarOutros()">Joias</button>
                     </li>
                 </ul>
             </div>
@@ -382,16 +382,18 @@
     </main>
     <script src="bootstrap/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        const mostrarTudo = document.getElementById('pills-roupas')
+        var dataID = 1
+        var el = 
         function mostrarTodos() {
-            document.getElementById('pills-todos-tab').click()
-            mostrarTudo.classList.add('show')
-            mostrarTudo.classList.add('active')
-            document.getElementById('pills-todos-tab').click()
-        
-            console.log ('fonfofofn')
+            dataID = 1
+            console.log(dataID)
+        }
+        function mostrarOutros() {
+            dataID = 0
+            console.log(dataID)
         }
 
+        document.addEventListener()
         
     </script>
 </body>
